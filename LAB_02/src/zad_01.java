@@ -82,14 +82,23 @@ public class zad_01 {
 //            suma = suma + Math.pow((double)k, 2);
 //        }
 //        System.out.print("Suma kwadratow wprowadzonych wartosci wynosi: " + suma);
-
-
-        // g)
-        Scanner scan = new Scanner(System.in);
-
-
-
-
+//
+//
+//        // g)
+//
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("Podaj liczbe naturalna n: ");
+//        int n = scan.nextInt();
+//        double suma = 0;
+//        double iloczyn = 1;
+//        for(int i=1; i<=n; i++){
+//            System.out.print("Podaj liczbe calkowita: ");
+//            int k = scan.nextInt();
+//            suma += k;
+//            iloczyn *= k;
+//        }
+//        System.out.println("Suma podanych wartosci wynosi: " + suma);
+//        System.out.println("Iloczyn podanych wartosci wynosi: " + iloczyn);
 
     }
 }
