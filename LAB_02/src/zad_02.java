@@ -4,73 +4,73 @@ public class zad_02 {
     public static void main(String[] args){
         // zadanie 2
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan_2_2 = new Scanner(System.in);
         System.out.print("Podaj liczbe naturalna n: ");
-        int n = scan.nextInt();
-        int suma = 0;
-        for(int i=0; i<n; i++){
+        int n_2_2 = scan_2_2.nextInt();
+        int suma_2_2 = 0;
+        for(int i=0; i<n_2_2; i++){
             System.out.print("Podaj liczbe calkowita: ");
-            int k = scan.nextInt();
+            int k = scan_2_2.nextInt();
             if (k >= 0){
-            suma = suma + k;
+            suma_2_2 = suma_2_2 + k;
             }
         }
-        suma = 2 * suma;
-        System.out.print("Podwojona suma wczytanych liczb ktore sa dodatnie wynosi: " + suma);
+        suma_2_2 = 2 * suma_2_2;
+        System.out.println("Podwojona suma wczytanych liczb ktore sa dodatnie wynosi: " + suma_2_2);
 
 
         //zadanie 3
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan_2_3 = new Scanner(System.in);
         System.out.print("Podaj liczbe naturalna n: ");
-        int n = scan.nextInt();
-        int ujemne = 0;
-        int dodatnie = 0;
-        int zera = 0;
-        for(int i=0; i<n; i++){
+        int n_2_3 = scan_2_3.nextInt();
+        int ujemne_2_3 = 0;
+        int dodatnie_2_3 = 0;
+        int zera_2_3 = 0;
+        for(int i=0; i<n_2_3; i++){
             System.out.print("Podaj liczbe calkowita: ");
-            int k = scan.nextInt();
+            int k = scan_2_3.nextInt();
             if (k < 0){
-            ujemne += 1;
+            ujemne_2_3 += 1;
             }
             else if (k > 0){
-                dodatnie += 1;
+                dodatnie_2_3 += 1;
             }
             else{
-                zera += 1;
+                zera_2_3 += 1;
             }
         }
 
-        System.out.println("Wsrod wczytanych liczb, liczb ujemnych mamy: " + ujemne);
-        System.out.println("Wsrod wczytanych liczb, liczb dodatnich mamy: " + dodatnie);
-        System.out.println("Wsrod wczytanych liczb, zer mamy: " + zera);
+        System.out.println("Wsrod wczytanych liczb, liczb ujemnych mamy: " + ujemne_2_3);
+        System.out.println("Wsrod wczytanych liczb, liczb dodatnich mamy: " + dodatnie_2_3);
+        System.out.println("Wsrod wczytanych liczb, zer mamy: " + zera_2_3);
 
 
         //zadanie 4
 
-        Scanner scan  = new Scanner(System.in);
+        Scanner scan_2_4  = new Scanner(System.in);
         System.out.print("Podaj liczbe naturalna n: ");
-        int n = scan.nextInt();
-        int najwieksza = 0;
-        int najmniejsza = 0;
-        for(int i=0; i<=n; i++){
+        int n_2_4 = scan_2_4.nextInt();
+        int najwieksza_2_4 = 0;
+        int najmniejsza_2_4 = 0;
+        for(int i=0; i<=n_2_4; i++){
             System.out.print("Podaj liczbe calkowita: ");
-            int k = scan.nextInt();
+            int k = scan_2_4.nextInt();
             while(i == 0){
-                najwieksza = k;
-                najmniejsza = k;
+                najwieksza_2_4 = k;
+                najmniejsza_2_4 = k;
                 i++;
             }
-            if(k > najwieksza){
-                najwieksza = k;
+            if(k > najwieksza_2_4){
+                najwieksza_2_4 = k;
             }
-            else if(k < najmniejsza){
-                najmniejsza = k;
+            else if(k < najmniejsza_2_4){
+                najmniejsza_2_4 = k;
             }
         }
 
-        System.out.println("Posrod wczytanych liczb najmniejsza to: " + najmniejsza);
-        System.out.print("Posrod wczytanych liczb najwieksza to: " + najwieksza);
+        System.out.println("Posrod wczytanych liczb najmniejsza to: " + najmniejsza_2_4);
+        System.out.println("Posrod wczytanych liczb najwieksza to: " + najwieksza_2_4);
 
 
         // zadanie 5
