@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 
 
 public class zad_01 {
@@ -33,10 +34,32 @@ public class zad_01 {
     }
 
 
-//    public static ArrayList<Integer> mergeSorted(ArrayList<Integer> a, ArrayList<Integer> b){
-//
-//
-//    }
+    public static ArrayList<Integer> mergeSorted(ArrayList<Integer> a, ArrayList<Integer> b){
+        a.sort(Comparator.naturalOrder());
+        b.sort(Comparator.naturalOrder());
+        ArrayList<Integer> c = new ArrayList<Integer>(a.size() + b.size());
+        int i=0;
+        int j=0;
+        while(i<a.size() && j<b.size()){
+            if(a.get(i) >= b.get(j)){
+                c.add(b.get(j));
+                j++;
+            }
+            else{
+                c.add(a.get(i));
+                i++;
+            }
+        }
+        while(i<a.size()){
+            c.add(a.get(i));
+            i++;
+        }
+        while(j<b.size()){
+            c.add(b.get(j));
+            j++;
+        }
+        return c;
+    }
 
 
     public static ArrayList<Integer> reversed(ArrayList<Integer> a){
@@ -76,7 +99,7 @@ public class zad_01 {
 
         System.out.println(append(a,b));
         System.out.println(merge(a,b));
-
+        System.out.println(mergeSorted(a,b));
         System.out.println(reversed(a));
         System.out.print(reversed(a));
 
